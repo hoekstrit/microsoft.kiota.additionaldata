@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Kiota.Serialization.Form" Version="1.15.2" />
+		<PackageReference Include="Microsoft.Kiota.Serialization.Json" Version="1.15.2" />
+		<PackageReference Include="Microsoft.Kiota.Serialization.Multipart" Version="1.15.2" />
+		<PackageReference Include="Microsoft.Kiota.Serialization.Text" Version="1.15.2" />
+	</ItemGroup>
+
+	<Target Name="Kiota" AfterTargets="PostBuildEvent">
+		<Exec WorkingDirectory="$(ProjectDir)" EnvironmentVariables="KIOTA_OFFLINE_ENABLED=true" Command="dotnet kiota generate --openapi ./openapi.json -l CSharp -o GeneratedClient -c KiotaApiClient -n Kiota.Api.Client --clean-output" />
+	</Target>
+
+</Project>

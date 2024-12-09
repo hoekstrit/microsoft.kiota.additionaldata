@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiota.Api", "Kiota.Api\Kiota.Api.csproj", "{3BB18F47-639A-423D-9EF8-309884F26AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiota.Api.Client", "Kiota.Api.Client\Kiota.Api.Client.csproj", "{BA119372-B6B8-4D24-B8DD-4D932758DF99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BB18F47-639A-423D-9EF8-309884F26AC0} = {3BB18F47-639A-423D-9EF8-309884F26AC0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiota.App", "Kiota.App\Kiota.App.csproj", "{AF1AA66B-358A-4FCE-B6AC-ABC24E548CC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BB18F47-639A-423D-9EF8-309884F26AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB18F47-639A-423D-9EF8-309884F26AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB18F47-639A-423D-9EF8-309884F26AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB18F47-639A-423D-9EF8-309884F26AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA119372-B6B8-4D24-B8DD-4D932758DF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA119372-B6B8-4D24-B8DD-4D932758DF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA119372-B6B8-4D24-B8DD-4D932758DF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA119372-B6B8-4D24-B8DD-4D932758DF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1AA66B-358A-4FCE-B6AC-ABC24E548CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1AA66B-358A-4FCE-B6AC-ABC24E548CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1AA66B-358A-4FCE-B6AC-ABC24E548CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1AA66B-358A-4FCE-B6AC-ABC24E548CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
